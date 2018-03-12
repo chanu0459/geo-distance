@@ -46,7 +46,7 @@ class GeoDistance
         dlon = lon2 - lon1
         dlat = lat2 - lat1
     
-        a = (Math.sin(dlat.rpd/2))**2 + Math.cos(lat1.rpd) * Math.cos((lat2.rpd)) * (Math.sin(dlon.rpd/2))**2
+        a = (Math.sin(dlat.rad.distance/2))**2 + Math.cos(lat1.rad.distance) * Math.cos((lat2.rad.distance)) * (Math.sin(dlon.rad.distance/2))**2
         c = (2 * Math.atan2( Math.sqrt(a), Math.sqrt(1-a)))
         c = c.to_deg
                 
